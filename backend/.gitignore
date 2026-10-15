@@ -1,0 +1,4 @@
+if (!(Test-Path ".gitignore")) {
+    New-Item -Path ".gitignore" -ItemType File
+}
+Add-Content ".gitignore" "`n.env`n**/.env`n"
